@@ -78,3 +78,12 @@ sudo ifconfig
 ```Shell
 sudo route -n
 ```
+
+###   /etc/dhcpcd.conf
+```Shell
+# Static IP configuration
+interface eth0
+  static ip_address=192.168.1.92/24
+  static routers=192.168.1.1
+  static domain_name_servers=192.168.1.33
+```
