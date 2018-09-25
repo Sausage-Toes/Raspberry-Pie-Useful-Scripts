@@ -20,6 +20,14 @@ sudo raspi-config
 sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
 ```
 
+#### individual update commands
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+```
+
+
 ### Update RPI Firmware
 ```Shell
 sudo rpi-update
