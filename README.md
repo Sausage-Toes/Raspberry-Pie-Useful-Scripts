@@ -5,7 +5,7 @@ Useful commands and scripts for managing and configuring Raspberry Pie Debian
 ```Shell
 watch --color /home/pi/get_pi_temp.sh
 ```
-###Set executable permission on shell script file:
+### Set executable permission on shell script file:
 ```Shell
 chmod +x get_pi_temp.sh
 ```
