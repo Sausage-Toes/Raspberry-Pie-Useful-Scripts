@@ -28,3 +28,8 @@ vcgencmd get_throttled
 |3: |under-voltage has occurred|
 |4: |arm frequency capped has occurred|
 |5: |throttling has occurred|
+
+_example output (no throttling has occurred)_
+```
+throttled=0x0
+```
