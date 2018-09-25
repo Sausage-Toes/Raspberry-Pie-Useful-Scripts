@@ -1,6 +1,15 @@
 # Raspberry-Pie-Useful-Scripts
 Useful commands and scripts for managing and configuring Raspberry Pie Debian
 
+### Monitor output of a script
+```Shell
+watch --color /home/pi/get_pi_temp.sh
+```
+###Set executable permission on shell script file:
+```Shell
+chmod +x get_pi_temp.sh
+```
+
 ### Configure Raspberry Pie specific devices and options
 ```Shell
 sudo raspi-config
