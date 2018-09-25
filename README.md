@@ -11,6 +11,11 @@ sudo raspi-config
 sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
 ```
 
+### Update RPI Firmware
+```
+sudo rpi-update
+```
+
 ### List the disk partitions on the device. 
 ```
 sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
