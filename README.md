@@ -15,3 +15,16 @@ sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-
 ```
 sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
 ```
+
+### Get status of CPU thermal/under-voltage throttleing 
+```
+vcgencmd get_throttled
+```
+|bit|flag|
+|---|:---|
+|0: |under-voltage|
+|1: |arm frequency capped|
+|2: |currently throttled |
+|3: |under-voltage has occurred|
+|4: |arm frequency capped has occurred|
+|5: |throttling has occurred|
