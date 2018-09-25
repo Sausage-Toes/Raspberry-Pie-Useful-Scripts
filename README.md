@@ -21,6 +21,13 @@ sudo rpi-update
 sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
 ```
 
+### List filesystems
+```
+df -h
+```
+
+
+
 ### Get status of CPU thermal/under-voltage throttleing 
 ```
 vcgencmd get_throttled
