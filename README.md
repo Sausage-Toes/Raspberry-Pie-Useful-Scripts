@@ -20,7 +20,7 @@ sudo raspi-config
 sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
 ```
 
-#### individual update commands
+#### Individual update commands:
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -91,7 +91,7 @@ sudo route -n
 ```Shell
 # Static IP configuration
 interface eth0
-  static ip_address=192.168.1.92/24
-  static routers=192.168.1.1
-  static domain_name_servers=192.168.1.33
+  static ip_address=192.168.1.XXX/24
+  static routers=192.168.1.XXX
+  static domain_name_servers=8.8.8.8
 ```
