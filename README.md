@@ -42,3 +42,13 @@ _example output (under-voltage)_
 ```
 throttled=0x50000
 ```
+
+### List network interfaces
+```
+sudo ifconfig
+```
+
+### Show Kernal IP routing table
+```
+sudo route -n
+```
