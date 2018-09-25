@@ -2,34 +2,34 @@
 Useful commands and scripts for managing and configuring Raspberry Pie Debian
 
 ### Configure Raspberry Pie specific devices and options
-```
+```Shell
 sudo raspi-config
 ```
 
 ### Update OS Distro
-```
+```Shell
 sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
 ```
 
 ### Update RPI Firmware
-```
+```Shell
 sudo rpi-update
 ```
 
 ### List the disk partitions on the device. 
-```
+```Shell
 sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
 ```
 
 ### List filesystems
-```
+```Shell
 df -h
 ```
 
 
 
 ### Get status of CPU thermal/under-voltage throttleing 
-```
+```Shell
 vcgencmd get_throttled
 ```
 |bit|flag|
@@ -51,11 +51,11 @@ throttled=0x50000
 ```
 
 ### List network interfaces
-```
+```Shell
 sudo ifconfig
 ```
 
 ### Show Kernal IP routing table
-```
+```Shell
 sudo route -n
 ```
