@@ -92,6 +92,16 @@ sudo route -n
 # Static IP configuration
 interface eth0
   static ip_address=192.168.1.XXX/24
-  static routers=192.168.1.XXX
+  static routers=192.168.1.1
   static domain_name_servers=8.8.8.8
+```
+
+### /etc/network/interfaces
+```Shell
+iface eth0 inet static
+address 192.168.1.XXX
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
 ```
