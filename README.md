@@ -33,3 +33,7 @@ _example output (no throttling has occurred)_
 ```
 throttled=0x0
 ```
+_example output (under-voltage)_
+```
+throttled=0x50000
+```
