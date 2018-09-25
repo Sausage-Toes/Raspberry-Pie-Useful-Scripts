@@ -25,17 +25,6 @@ sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-
 sudo rpi-update
 ```
 
-### List the disk partitions on the device. 
-```Shell
-sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
-```
-
-### List filesystems
-```Shell
-df -h
-```
-
-
 
 ### Get status of CPU thermal/under-voltage throttleing 
 ```Shell
@@ -57,6 +46,27 @@ throttled=0x0
 _example output (under-voltage)_
 ```
 throttled=0x50000
+```
+
+
+### List the disk partitions on the device. 
+```Shell
+sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
+```
+
+### List filesystems
+```Shell
+df -h
+```
+
+### To mount FAT with read/write capability 
+```Shell
+mount -t vfat -o umask=000 /dev/sde1 /mnt/fat
+```
+
+### To mount NTFS with read/write capability
+```Shell
+mount -t ntfs -o umask=000 /dev/sdd1 /mnt/ntfs
 ```
 
 ### List network interfaces
