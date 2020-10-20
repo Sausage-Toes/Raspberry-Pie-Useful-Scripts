@@ -66,6 +66,8 @@ sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
 ```Shell
 df -h
 ```
+df -B1
+```
 
 ### To mount FAT with read/write capability 
 ```Shell
