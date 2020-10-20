@@ -105,3 +105,8 @@ network 192.168.1.0
 broadcast 192.168.1.255
 gateway 192.168.1.1
 ```
+
+### MotionEye
+For MotionEye stream pre-view
+Disablie 
+chrome://flags/#enable-lazy-image-loading 
