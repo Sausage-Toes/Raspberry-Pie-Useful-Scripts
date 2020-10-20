@@ -65,7 +65,7 @@ sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
 ### List filesystems
 ```Shell
 df -h
-```
+
 df -B1
 ```
 
